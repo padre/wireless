@@ -9,7 +9,7 @@ def cmd(cmd):
     return subprocess.Popen(
         cmd, shell=True,
         stdout=subprocess.PIPE, stderr=subprocess.STDOUT
-    ).stdout.read().decode()
+    ).stdout.read().decode('utf-8')
 
 
 # abstracts away wireless connection
